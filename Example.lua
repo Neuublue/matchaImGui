@@ -1,4 +1,4 @@
-loadstring("https://raw.githubusercontent.com/zee-7654/UI/refs/heads/main/UI.lua") -- This adds globals "UI" and "Flags" (matcha please add loadstring returning)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zee-7654/UI/refs/heads/main/UI.lua"))() -- This adds globals "UI" and "Flags" (matcha please add loadstring returning)
 
 local Window = UI:Window({
 	Title = "Window Title",
