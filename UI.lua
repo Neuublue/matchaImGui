@@ -45,7 +45,7 @@ local Mouse = LocalPlayer:GetMouse()
 
 local Helpers = {}
 function Helpers.GetWindowSize()
-	return game:GetService("Workspace").CurrentCamera.ViewportSize
+	return workspace:WaitForChild("Camera").ViewportSize
 end
 
 function Helpers.GetWindowMiddle(Offset)
