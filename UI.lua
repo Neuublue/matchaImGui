@@ -507,7 +507,7 @@ function UI:Window(Options)
 
 	spawn(function()
 		while Window.Internal.Running do
-			wait()
+			wait(0.0015)
 			local Success, Error = pcall(function()
 				Window.Update()
 				for index, Tab in Window.Children.Tabs do
