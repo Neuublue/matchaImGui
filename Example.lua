@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zee-7654/UI/refs/heads/main/UI.lua"))() -- This adds globals "UI" and "Flags" (matcha please add loadstring returning)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Neuublue/matchaImGui/refs/heads/main/UI.lua"))() -- This adds globals "UI" and "Flags" (matcha please add loadstring returning)
 
 local Window = UI:Window({
 	Title = "Window Title",
@@ -248,7 +248,7 @@ SettingGetting:Button({ Title = "Toggle Random Option" }, function()
 end)
 
 while Window.Internal.Running do
-	wait()
+	wait(0.0015)
 	Runtime:Set("Runtime: " .. math.round((os.clock() - StartRunTime) * 10) / 10)
 	SGCheckboxLabel:Set("Checkbox Value: " .. tostring(SGCheckbox:Get()))
 	SGSliderLabel:Set("Slider Value: " .. SGSlider:Get())
